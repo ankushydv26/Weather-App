@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.main-container{
+  background-image: url("./images/bg.jpg");
+  background-position-y: bottom;
+  /* background-position: center; */
+  background-size: cover;
+  height: 100vh;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+.search{
+  outline-style: none;
+  text-align: center;
+  font-family: monospace;
+  padding: 1.2em;
+  border-radius: 20px ;
+  font-size: 1.1em;
+  font-weight: 600;
   color: white;
+  background: rgba( 244, 229, 229, 0.00 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.weather{
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  background: rgba( 244, 229, 229, 0.00 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1.5px solid rgba( 255, 255, 255, 0.18 );
+  color: white;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.country{
+  margin: 2px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+.city-name{
+  font-family: monospace;
+  margin-bottom: 1em;
 }
