@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="main-container">
-     <h1>Search Your City </h1>
+     <h1 style={{color:'#ffff', padding:'1rem 0'}}>Search Your City </h1>
       <div className="container">
           <input 
             type="text"
